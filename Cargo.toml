@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["self-mounting-preact-axum-backend"]
+members = ["self-mounting-preact-axum-backend", "self-mounting-angular-axum-backend"]
 
 [workspace.package]
 version = "0.1.0"

@@ -1,5 +1,5 @@
 {
-  "name": "@sleet-ai-lab/frontend-middleman-backend-middleman",
+  "name": "@sleet-ai-lab/frontend-middleman-backend-middleman-preact",
   "version": "0.0.1",
   "description": "clean ts library for interacting with the self-mounting-preact-axum-backend routes.",
   "license": "MIT",

@@ -22,6 +22,9 @@ node_modules/
 # the built static folder (bun build)
 **/static/
 
+# the angular aot output folder
+**/.aot/
+
 # the built middleman dist (tsc --build)
 **/dist/
 **/.tsbuildinfo
