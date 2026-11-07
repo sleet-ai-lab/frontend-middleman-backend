@@ -1,0 +1,6 @@
+[package]
+name = "self-mounting-preact-axum-backend"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
