@@ -7,10 +7,10 @@
     "middleman"
   ],
   "scripts": {
-    "build": "bun run build.ts",
+    "build": "bun run build:middleman && bun run build.ts",
     "build:middleman": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-middleman-preact build",
     "typecheck": "bun run --filter '*' typecheck && tsc --noEmit",
-    "clean": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-middleman-preact clean"
+    "clean": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-middleman-preact clean && rm -rf static"
   },
   "dependencies": {
     "@sleet-ai-lab/frontend-middleman-backend-middleman-preact": "workspace:*",
