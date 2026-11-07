@@ -1,3 +1,4 @@
+use super::ping_route::ping_route;
 use axum::{
     Router,
     extract::Request,
@@ -7,9 +8,8 @@ use axum::{
     routing::get,
 };
 use tower_http::{cors::CorsLayer, services::ServeDir};
-
-use super::ping_route::ping_route;
-
+// ========================================
+// cors_preflight_middleware_fun
 async fn cors_preflight_middleware_fun(req: Request, next: Next) -> Response {
     if req.method() == Method::OPTIONS {
         return (
@@ -28,7 +28,8 @@ async fn cors_preflight_middleware_fun(req: Request, next: Next) -> Response {
     }
     next.run(req).await
 }
-
+// ========================================
+// fresh_static_middleware_fun
 async fn fresh_static_middleware_fun(req: Request, next: Next) -> Response {
     let mut res = next.run(req).await;
     if res.status() != StatusCode::NO_CONTENT {
@@ -39,7 +40,8 @@ async fn fresh_static_middleware_fun(req: Request, next: Next) -> Response {
     }
     res
 }
-
+// ========================================
+// app_router_fun
 pub fn app_router_fun() -> Router {
     let api_router = Router::new().route("/api/app/ping", get(ping_route));
     let static_service = ServeDir::new("static");
@@ -64,3 +66,4 @@ pub fn app_router_fun() -> Router {
         .layer(cors)
         .layer(middleware::from_fn(cors_preflight_middleware_fun))
 }
+// ========================================

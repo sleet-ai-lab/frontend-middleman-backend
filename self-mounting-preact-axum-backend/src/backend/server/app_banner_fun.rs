@@ -1,3 +1,4 @@
+// ========================================
 pub fn app_banner_fun(host: &str, port: u16) {
     println!("====================================");
     if host == "0.0.0.0" || host == "::" {
@@ -14,3 +15,4 @@ pub fn app_banner_fun(host: &str, port: u16) {
     println!("  http://localhost:{port}/api/app/ping");
     println!("====================================");
 }
+// ========================================
