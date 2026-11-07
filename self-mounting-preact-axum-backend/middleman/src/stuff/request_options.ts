@@ -1,8 +1,12 @@
+// ========================================
+// REQUEST_OPTIONS
 export interface REQUEST_OPTIONS {
   api_key?: string;
   headers?: Record<string, string>;
 }
 
+// ========================================
+// BUILD_HEADERS_FUN
 export function build_headers(
   options: REQUEST_OPTIONS = {},
   extra: Record<string, string> = {},
@@ -14,3 +18,4 @@ export function build_headers(
   Object.assign(out, extra, options.headers ?? {});
   return out;
 }
+// ========================================

@@ -1,7 +1,8 @@
 import { ENDPOINT_PATHS, type EndpointKey } from "./endpoint_paths";
 import { parse_error } from "./parse_error";
 import { build_headers, type REQUEST_OPTIONS } from "./request_options";
-
+// ========================================
+// API_CALL_PARAMS
 export interface API_CALL_PARAMS {
   base_url: string;
   key: EndpointKey;
@@ -14,6 +15,8 @@ export interface API_CALL_PARAMS {
   fallback: string;
 }
 
+// ========================================
+// API_CALL_FUN
 export async function api_call<T = unknown>({
   base_url,
   key,
@@ -71,6 +74,8 @@ export async function api_call<T = unknown>({
   return json;
 }
 
+// ========================================
+// ENCODE_QUERY_VALUE_FUN
 function encode_query_value_fun(value: string | number | boolean): string {
   if (typeof value === "boolean") return value ? "true" : "false";
   if (typeof value === "number") {
@@ -78,3 +83,4 @@ function encode_query_value_fun(value: string | number | boolean): string {
   }
   return String(value);
 }
+// ========================================

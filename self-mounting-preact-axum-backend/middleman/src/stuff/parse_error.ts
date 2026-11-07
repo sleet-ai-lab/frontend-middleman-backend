@@ -1,10 +1,13 @@
 import type { APP_ERROR_RESPONSE } from "../types/common";
-
+// ========================================
+// APP_API_ERROR
 export interface APP_API_ERROR extends Error {
   status: number;
   code: string;
 }
 
+// ========================================
+// PARSE_ERROR_CONTEXT
 export interface PARSE_ERROR_CONTEXT {
   url?: string;
   method?: string;
@@ -12,6 +15,8 @@ export interface PARSE_ERROR_CONTEXT {
   request_body?: BodyInit | null;
 }
 
+// ========================================
+// PARSE_ERROR_FUN
 export async function parse_error(
   res: Response,
   fallback: string,
@@ -59,3 +64,4 @@ export async function parse_error(
   error.code = code;
   return error;
 }
+// ========================================

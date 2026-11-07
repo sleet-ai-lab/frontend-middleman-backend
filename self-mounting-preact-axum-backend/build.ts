@@ -1,6 +1,7 @@
 import { rm } from "node:fs/promises";
 import { join } from "node:path";
-
+// ========================================
+// BUILD_FUN
 const repositoryRoot = import.meta.dir;
 const frontendDirectory = join(repositoryRoot, "frontend");
 const outputDirectory = join(repositoryRoot, "static");
@@ -33,3 +34,4 @@ if (!result.success) {
 }
 
 console.log(`Built ${result.outputs.length} files into ${outputDirectory}`);
+// ========================================

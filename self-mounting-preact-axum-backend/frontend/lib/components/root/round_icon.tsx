@@ -1,6 +1,7 @@
 import { render } from "preact";
 import { APP_MOUNT_ID } from "../../ts/shared/mount_ids";
-
+// ========================================
+// APP_COMPONENT_ROUND_ICON_FUN
 function APP_COMPONENT_ROUND_ICON_FUN() {
   return (
     <svg
@@ -13,9 +14,11 @@ function APP_COMPONENT_ROUND_ICON_FUN() {
     </svg>
   );
 }
-
+// ========================================
+// APP_COMPONENT_ROUND_ICON_MOUNT
 const SELF_MOUNT_ID = APP_MOUNT_ID.APP_COMPONENT_ROUND_ICON;
 if (typeof document !== "undefined") {
   const el = document.getElementById(SELF_MOUNT_ID);
   if (el !== null) render(<APP_COMPONENT_ROUND_ICON_FUN />, el);
 }
+// ========================================
