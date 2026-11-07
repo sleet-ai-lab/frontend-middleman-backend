@@ -20,7 +20,7 @@
 node_modules/
 
 # the built static folder (bun build)
-/static/
+**/static/
 
 # the built middleman dist (tsc --build)
 **/dist/
