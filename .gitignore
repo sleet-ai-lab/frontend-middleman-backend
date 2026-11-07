@@ -15,3 +15,13 @@
 .idea/
 .vscode/
 .DS_Store
+
+# node/bun
+node_modules/
+
+# the built static folder (bun build)
+/static/
+
+# the built middleman dist (tsc --build)
+**/dist/
+**/.tsbuildinfo

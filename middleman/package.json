@@ -1,0 +1,37 @@
+{
+  "name": "@sleet-ai-lab/frontend-middleman-backend-middleman",
+  "version": "0.0.1",
+  "description": "💩 middleman for interacting with the self-mounting-preact-axum-backend routes",
+  "license": "MIT",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist/**/*",
+    "bin/**/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "rm -f .tsbuildinfo && bun run tsc --build tsconfig.build.json --force",
+    "clean": "bun run tsc --build --clean && rm -rf dist .tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
