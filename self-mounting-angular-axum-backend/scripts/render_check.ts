@@ -22,7 +22,7 @@ if (!root_bundle_name) throw new Error("no root bundle found in static");
 // ========================================
 // RENDER_CHECK_APP_FUN
 async function render_check_app_fun(): Promise<boolean> {
-  const window = new Window({ url: "http://localhost:64076/app/index.html" });
+  const window = new Window({ url: "http://localhost:64077/app/index.html" });
   const document = window.document;
 
   const global_any = globalThis as any;
@@ -56,7 +56,7 @@ async function render_check_app_fun(): Promise<boolean> {
 // ========================================
 // RENDER_CHECK_ROOT_FUN
 async function render_check_root_fun(): Promise<boolean> {
-  const window = new Window({ url: "http://localhost:64076/" });
+  const window = new Window({ url: "http://localhost:64077/" });
   const document = window.document;
 
   const global_any = globalThis as any;

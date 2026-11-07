@@ -18,10 +18,14 @@ and then everything is bundled by bun into `static`.
 
 rust/backend
 
+the default port is `64077`, override it with the `APP_PORT` env var.
+
 ```sh
 cargo fmt
 cargo check
 cargo run
+# use a different port
+APP_PORT=8080 cargo run
 # cargo build
 cargo build --release
 ./target/release/self-mounting-angular-axum-backend
