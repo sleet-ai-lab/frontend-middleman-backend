@@ -5,10 +5,12 @@ bun/frontend
 bun i
 bunx prettier . --write
 bun tsc --noEmit
-# bun build recursive
+# bun build
 rm -rf static
 cd frontend
 bun build ./**/*.html --outdir=../static --minify
+# or bun run build
+bun run build
 ```
 
 rust/backend
