@@ -2,9 +2,7 @@
 #![allow(non_snake_case)]
 
 pub mod backend {
-    pub mod logic {
-        pub mod server;
-    }
+    pub mod server;
     pub mod routes {
         pub mod app_router_fun;
         pub mod ping_route;
