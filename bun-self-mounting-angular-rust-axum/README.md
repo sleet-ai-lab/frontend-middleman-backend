@@ -1,4 +1,4 @@
-# self-mounting-angular-axum-backend
+# bun-self-mounting-angular-rust-axum
 
 bun/frontend
 

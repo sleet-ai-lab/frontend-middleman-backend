@@ -1,6 +1,6 @@
 # @sleet-ai-lab/frontend-middleman-backend-middleman-preact
 
-clean ts library for interacting with the self-mounting-preact-axum-backend routes.
+clean ts library for interacting with the bun-self-mounting-preact-rust-axum routes.
 
 ```sh
 bun i

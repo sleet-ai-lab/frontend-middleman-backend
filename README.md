@@ -2,8 +2,8 @@
 
 template demos
 
-- self-mounting-preact-axum-backend
-- self-mounting-angular-axum-backend
+- bun-self-mounting-preact-rust-axum
+- bun-self-mounting-angular-rust-axum
 
 ```sh
 bunx prettier . --write

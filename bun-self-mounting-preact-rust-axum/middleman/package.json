@@ -1,13 +1,13 @@
 {
-  "name": "@sleet-ai-lab/frontend-middleman-backend-middleman-angular",
+  "name": "@sleet-ai-lab/frontend-middleman-backend-middleman-preact",
   "version": "0.0.1",
-  "description": "clean ts library for interacting with the self-mounting-angular-axum-backend routes.",
+  "description": "clean ts library for interacting with the bun-self-mounting-preact-rust-axum routes.",
   "license": "MIT",
   "homepage": "https://sleet-js.near.page",
   "repository": {
     "type": "git",
     "url": "https://github.com/sleet-ai-lab/frontend-middleman-backend.git",
-    "directory": "self-mounting-angular-axum-backend/middleman"
+    "directory": "bun-self-mounting-preact-rust-axum/middleman"
   },
   "type": "module",
   "module": "./dist/index.js",
@@ -35,9 +35,9 @@
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^26.6.6",
-    "typescript": "^6.0.0"
+    "typescript": "^7.0.2"
   },
   "peerDependencies": {
-    "typescript": "^6"
+    "typescript": "^7"
   }
 }

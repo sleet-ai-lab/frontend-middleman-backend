@@ -1,4 +1,4 @@
-# self-mounting-preact-axum-backend
+# bun-self-mounting-preact-rust-axum
 
 bun/frontend
 
