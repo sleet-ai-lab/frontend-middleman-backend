@@ -1,5 +1,5 @@
 [package]
-name = "self-mounting-angular-axum-backend"
+name = "frontend-middleman-backend-backend-bun-angular"
 version.workspace = true
 edition.workspace = true
 

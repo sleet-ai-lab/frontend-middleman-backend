@@ -1,4 +1,4 @@
-# @sleet-ai-lab/frontend-middleman-backend-middleman-preact
+# @sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact
 
 clean ts library for interacting with the bun-self-mounting-preact-rust-axum routes.
 

@@ -20,7 +20,7 @@ cargo check
 cargo run
 # cargo build
 cargo build --release
-./target/release/self-mounting-preact-axum-backend
+./target/release/frontend-middleman-backend-backend-bun-preact
 ```
 
 =================

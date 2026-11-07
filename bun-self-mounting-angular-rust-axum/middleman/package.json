@@ -1,5 +1,5 @@
 {
-  "name": "@sleet-ai-lab/frontend-middleman-backend-middleman-angular",
+  "name": "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-angular",
   "version": "0.0.1",
   "description": "clean ts library for interacting with the bun-self-mounting-angular-rust-axum routes.",
   "license": "MIT",

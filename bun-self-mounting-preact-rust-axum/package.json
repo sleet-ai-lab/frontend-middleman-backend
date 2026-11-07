@@ -1,5 +1,5 @@
 {
-  "name": "@sleet-ai-lab/frontend-middleman-backend-frontend-preact",
+  "name": "@sleet-ai-lab/frontend-middleman-backend-bun-frontend-preact",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -8,12 +8,12 @@
   ],
   "scripts": {
     "build": "bun run build:middleman && bun run build.ts",
-    "build:middleman": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-middleman-preact build",
+    "build:middleman": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact build",
     "typecheck": "bun run --filter '*' typecheck && tsc --noEmit",
-    "clean": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-middleman-preact clean && rm -rf static"
+    "clean": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact clean && rm -rf static"
   },
   "dependencies": {
-    "@sleet-ai-lab/frontend-middleman-backend-middleman-preact": "workspace:*",
+    "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact": "workspace:*",
     "preact": "^11.0.1"
   },
   "devDependencies": {

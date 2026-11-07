@@ -3,9 +3,9 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@sleet-ai-lab/frontend-middleman-backend-frontend-preact",
+      "name": "@sleet-ai-lab/frontend-middleman-backend-bun-frontend-preact",
       "dependencies": {
-        "@sleet-ai-lab/frontend-middleman-backend-middleman-preact": "workspace:*",
+        "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact": "workspace:*",
         "preact": "^11.0.1",
       },
       "devDependencies": {
@@ -15,7 +15,7 @@
       },
     },
     "middleman": {
-      "name": "@sleet-ai-lab/frontend-middleman-backend-middleman-preact",
+      "name": "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact",
       "version": "0.0.1",
       "devDependencies": {
         "@types/bun": "latest",
@@ -28,7 +28,7 @@
     },
   },
   "packages": {
-    "@sleet-ai-lab/frontend-middleman-backend-middleman-preact": ["@sleet-ai-lab/frontend-middleman-backend-middleman-preact@workspace:middleman"],
+    "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact": ["@sleet-ai-lab/frontend-middleman-backend-bun-middleman-preact@workspace:middleman"],
 
     "@types/bun": ["@types/bun@1.4.4", "", { "dependencies": { "bun-types": "1.4.4" } }, "sha512-9wkRDXUXK124pEnAutE6n/l18j+i9GC5IAHK8TmX/2nlySETmky0OU6yL5U8pW1AoKh++AN9auDCr647BfurjQ=="],
 

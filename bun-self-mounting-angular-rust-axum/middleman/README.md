@@ -1,4 +1,4 @@
-# @sleet-ai-lab/frontend-middleman-backend-middleman-angular
+# @sleet-ai-lab/frontend-middleman-backend-bun-middleman-angular
 
 clean ts library for interacting with the bun-self-mounting-angular-rust-axum routes.
 

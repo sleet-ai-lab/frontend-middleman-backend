@@ -26,7 +26,7 @@ cargo check
 cargo run
 # cargo build
 cargo build --release
-./target/release/self-mounting-angular-axum-backend
+./target/release/frontend-middleman-backend-backend-bun-angular
 ```
 
 =================

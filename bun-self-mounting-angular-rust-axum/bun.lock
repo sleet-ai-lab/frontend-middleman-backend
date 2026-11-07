@@ -3,12 +3,12 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@sleet-ai-lab/frontend-middleman-backend-frontend-angular",
+      "name": "@sleet-ai-lab/frontend-middleman-backend-bun-frontend-angular",
       "dependencies": {
         "@angular/common": "^22.2.5",
         "@angular/core": "^22.2.5",
         "@angular/platform-browser": "^22.2.5",
-        "@sleet-ai-lab/frontend-middleman-backend-middleman-angular": "workspace:*",
+        "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-angular": "workspace:*",
         "rxjs": "^7.8.2",
         "tslib": "^2.9.1",
       },
@@ -23,7 +23,7 @@
       },
     },
     "middleman": {
-      "name": "@sleet-ai-lab/frontend-middleman-backend-middleman-angular",
+      "name": "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-angular",
       "version": "0.0.1",
       "devDependencies": {
         "@types/bun": "latest",
@@ -82,7 +82,7 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
 
-    "@sleet-ai-lab/frontend-middleman-backend-middleman-angular": ["@sleet-ai-lab/frontend-middleman-backend-middleman-angular@workspace:middleman"],
+    "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-angular": ["@sleet-ai-lab/frontend-middleman-backend-bun-middleman-angular@workspace:middleman"],
 
     "@types/bun": ["@types/bun@1.4.4", "", { "dependencies": { "bun-types": "1.4.4" } }, "sha512-9wkRDXUXK124pEnAutE6n/l18j+i9GC5IAHK8TmX/2nlySETmky0OU6yL5U8pW1AoKh++AN9auDCr647BfurjQ=="],
 
