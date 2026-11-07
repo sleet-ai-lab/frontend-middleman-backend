@@ -1,7 +1,7 @@
 {
   "name": "@sleet-ai-lab/frontend-middleman-backend-middleman",
   "version": "0.0.1",
-  "description": "💩 middleman for interacting with the self-mounting-preact-axum-backend routes",
+  "description": "clean ts library for interacting with the self-mounting-preact-axum-backend routes.",
   "license": "MIT",
   "homepage": "https://sleet-js.near.page",
   "repository": {
