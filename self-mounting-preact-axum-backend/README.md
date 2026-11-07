@@ -1,6 +1,7 @@
 # self-mounting-preact-axum-backend
 
 bun/frontend
+
 ```sh
 bun i
 bunx prettier . --write
@@ -14,6 +15,7 @@ bun run build
 ```
 
 rust/backend
+
 ```sh
 cargo fmt
 cargo check
@@ -22,7 +24,6 @@ cargo run
 cargo build --release
 ./target/release/self-mounting-preact-axum-backend
 ```
-
 
 =================
 copyright 2026

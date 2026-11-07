@@ -3,4 +3,5 @@ export const APP_MOUNT_ID = {
   APP_COMPONENT_HELLO_WORLD: "APP_COMPONENT_HELLO_WORLD",
 } as const;
 
-export type APP_MOUNT_ID_TYPE = (typeof APP_MOUNT_ID)[keyof typeof APP_MOUNT_ID];
+export type APP_MOUNT_ID_TYPE =
+  (typeof APP_MOUNT_ID)[keyof typeof APP_MOUNT_ID];
