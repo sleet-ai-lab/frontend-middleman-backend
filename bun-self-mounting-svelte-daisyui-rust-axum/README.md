@@ -57,6 +57,24 @@ daisyui only styles its own components, a bare `<p>` stays unstyled. the
 `text-base-content` class on the hello world paragraph is a daisyui theme color
 class, so it applies the theme text color without changing the layout.
 
+## themes
+
+the `light` theme is the default and the `dark` theme is applied when the system
+prefers dark mode, so the page follows the system setting.
+
+```css
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark;
+}
+```
+
+the html elements do not set a `data-theme` attribute on purpose, daisyui only
+applies the system preference to the root when there is no `data-theme`
+attribute. setting `data-theme="dark"` on the `<html>` element would pin the
+theme instead.
+
 ## no custom css files
 
 this demo has **no custom css files**. `frontend/lib/css/app.css` is the only
