@@ -1,4 +1,4 @@
-import "./hello.ts";
+import "./shared/hello.ts";
 import "./root/root_page_start.ts";
 import { APP_MOUNT_ID, app_mount_component_fun } from "./shared/mount_ids.ts";
 import APP_COMPONENT_ROUND_ICON from "../components/root/round_icon.svelte";
