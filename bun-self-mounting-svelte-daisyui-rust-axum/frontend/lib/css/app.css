@@ -19,8 +19,3 @@ the paths are relative to this file. */
 @source "../../../index.html";
 @source "../../../app/index.html";
 /*========================================*/
-/*========================================*/
-/* BASE */
-@import "./base/main.css";
-@import "./base/svg.css";
-/*========================================*/

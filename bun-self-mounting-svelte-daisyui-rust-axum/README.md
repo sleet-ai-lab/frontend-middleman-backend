@@ -33,7 +33,7 @@ import tailwind from "bun-plugin-tailwind";
 plugins: [tailwind, svelte_plugin()],
 ```
 
-the css itself lives in `frontend/lib/css/import.css`:
+the css itself lives in `frontend/lib/css/app.css`:
 
 ```css
 @import "tailwindcss" source(none);
@@ -56,6 +56,19 @@ the paths are relative to the css file.
 daisyui only styles its own components, a bare `<p>` stays unstyled. the
 `text-base-content` class on the hello world paragraph is a daisyui theme color
 class, so it applies the theme text color without changing the layout.
+
+## no custom css files
+
+this demo has **no custom css files**. `frontend/lib/css/app.css` is the only
+css file and it holds nothing but the tailwind/daisyui configuration, it has no
+custom rules in it. the page layout and the icon size come entirely from
+tailwind utility classes:
+
+- the `<main>` element of `frontend/index.html` and `frontend/app/index.html`
+  uses `min-h-screen flex flex-col justify-center items-center box-border`,
+  which replaces the old `main { ... }` rule
+- the `<svg>` in `frontend/lib/components/root/round_icon.svelte` uses
+  `w-[200px]`, which replaces the old `svg { width: 200px }` rule
 
 rust/backend
 
