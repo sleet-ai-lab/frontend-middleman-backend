@@ -1,0 +1,29 @@
+{
+  "name": "@sleet-ai-lab/frontend-middleman-backend-bun-frontend-svelte-daisyui",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "middleman"
+  ],
+  "scripts": {
+    "build": "bun run build:middleman && bun run build.ts",
+    "build:middleman": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-bun-middleman-svelte-daisyui build",
+    "typecheck": "bun run --filter '*' typecheck && tsc --noEmit",
+    "render:check": "bun run scripts/render_check.ts",
+    "clean": "bun run --filter @sleet-ai-lab/frontend-middleman-backend-bun-middleman-svelte-daisyui clean && rm -rf static"
+  },
+  "dependencies": {
+    "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-svelte-daisyui": "workspace:*",
+    "svelte": "^5.57.3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "@types/node": "^26.6.5",
+    "bun-plugin-tailwind": "^0.1.2",
+    "daisyui": "^5.7.50",
+    "happy-dom": "^21.0.4",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2"
+  }
+}

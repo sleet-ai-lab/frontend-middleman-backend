@@ -1,0 +1,26 @@
+/*========================================*/
+/* TAILWIND */
+@import "tailwindcss" source(none);
+/*========================================*/
+/*========================================*/
+/* DAISYUI */
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark;
+}
+/*========================================*/
+/*========================================*/
+/* SOURCES */
+/* the default tailwind scanner also matches the daisyui sources inside
+node_modules, so the sources are listed explicitly here instead.
+the paths are relative to this file. */
+@source "../../**/*.{svelte,ts,html}";
+@source "../../../index.html";
+@source "../../../app/index.html";
+/*========================================*/
+/*========================================*/
+/* BASE */
+@import "./base/main.css";
+@import "./base/svg.css";
+/*========================================*/

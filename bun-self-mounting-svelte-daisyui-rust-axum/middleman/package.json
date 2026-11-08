@@ -1,0 +1,43 @@
+{
+  "name": "@sleet-ai-lab/frontend-middleman-backend-bun-middleman-svelte-daisyui",
+  "version": "0.0.1",
+  "description": "clean ts library for interacting with the bun-self-mounting-svelte-daisyui-rust-axum routes.",
+  "license": "MIT",
+  "homepage": "https://sleet-js.near.page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sleet-ai-lab/frontend-middleman-backend.git",
+    "directory": "bun-self-mounting-svelte-daisyui-rust-axum/middleman"
+  },
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist/**/*",
+    "bin/**/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "rm -f .tsbuildinfo && bun run tsc --build tsconfig.build.json --force",
+    "clean": "bun run tsc --build --clean && rm -rf dist .tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
