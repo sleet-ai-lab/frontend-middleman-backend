@@ -1,6 +1,10 @@
 [workspace]
 resolver = "3"
-members = ["bun-self-mounting-preact-rust-axum", "bun-self-mounting-angular-rust-axum"]
+members = [
+  "bun-self-mounting-preact-rust-axum",
+  "bun-self-mounting-angular-rust-axum",
+  "bun-self-mounting-svelte-rust-axum",
+]
 
 [workspace.package]
 version = "0.1.0"
